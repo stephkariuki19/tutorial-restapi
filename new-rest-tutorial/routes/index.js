@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+import session from './session';
+import user from './newuser';
+import message from './message';
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-module.exports = router;
+module.exports = {
+  session,
+  user,
+  message,
+};
